@@ -1,4 +1,12 @@
-  for (let i = 0; i < contH2.length; i++) {
+ document.addEventListener('DOMContentLoaded', f_load)
+
+function f_load() {
+
+    const listaMae = document.createElement('ol')
+    document.body.prepend(listaMae)
+    const contH2 = document.querySelectorAll('h2')
+
+    for (let i = 0; i < contH2.length; i++) {
 
         const elementos = f_criarLista(`#h2${i + 1}`, contH2[i].textContent)
         listaMae.appendChild(elementos)
