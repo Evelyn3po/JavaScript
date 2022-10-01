@@ -16,6 +16,6 @@ window.onload = function() {
     // Evento de click para diminuir a fonte
     elementBtnDecreaseFont.addEventListener('click', function(event) {
         fontSize = fontSize - increaseDecrease;
-        elementBody.style.fontSize = fontSize + '%';
+        elementBody.style.fontSize = fontSize + '10%';
     });
 }
