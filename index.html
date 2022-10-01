@@ -3,6 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <title> Script de alteração de tamanho </title>
+        <script>
+            let tamanho = 2;
+            function atualizatamanho() {
+                const h1 = document.querySelector("h1");
+                h1.style.fontSize = 's(tamanho)em';
+            }
+            function aumentatitulo() {
+                tamanho += 0.10;
+                atualizatamanho()
+            }
+            function diminuitamanho() {
+                if(tamanho > 5) {
+                   tamanho -= 0.10;
+                   atualizatamanho();
+                }
+            }
+        </script>
 
         <style type="text/css">
             body {
