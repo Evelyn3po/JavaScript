@@ -10,12 +10,12 @@ window.onload = function() {
     // Evento de click para aumentar a fonte
     elementBtnIncreaseFont.addEventListener('click', function(event) {
         fontSize = fontSize + increaseDecrease;
-        elementBody.style.fontSize = (size+5)+ "px";
+        elementBody.style.fontSize = + '%';
     });
 
     // Evento de click para diminuir a fonte
     elementBtnDecreaseFont.addEventListener('click', function(event) {
         fontSize = fontSize - increaseDecrease;
-        elementBody.style.fontSize = (size-5)+"px";
+        elementBody.style.fontSize = + '%';
     });
 }
