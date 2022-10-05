@@ -1,22 +1,59 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title> Script de alteração de tamanho </title>
-       
-    </head>
-    <body>
-        <div class="btn-container">
-            <button name="increase-font" id="increase-font" title="Aumentar fonte">+</button>
-            <button name="decrease-font" id="decrease-font" title="Diminuir fonte">-</button>
-        </div>
-        <h1>Nem todos os dias são bons, mas há algo bom em cada dia.</h1>
-        
-        <body onload="orga()">
-            <script src="Botão.js"></script>
-        </body>
-    </body>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <title>FonteSize</title>
+  <style>
+    body{
+      font-size: 15pt;  
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    button{
+      border: none;
+      background: rgb(150,150,240);
+      color: white;
+      height: 40px;
+      width:100px;
+      padding:8px;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 30px 10px;
+    }
+    .bts{
+      display: flex;
+      justify-content: center;
+    }
+    p,h4{
+      margin: 10px;
+    }
 
+  </style>
 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="bts">
+      <button onclick="FontSize('aumenta')">Aumenta</button>
+      <button onclick="FontSize('diminui')">Diminui</button>
+    </div>
+    <div class="texto">
+      <h4 id="h4">Javascript</h4>
+      <p id="p">Mundando o tamanho da fonte com botões usando arquivo externo em java</p>
+  </div>
+  </div>
+</div>
+</body>
+  <body onload="orga()">
+    <script src="Botão.js"></script>
+</body>
+</html>
+  
 
