@@ -10,5 +10,5 @@ function FontSize(type){
     else{
       elemento.style.fontSize=(size-5)+"px";
     }
-  })
+  }
   }
