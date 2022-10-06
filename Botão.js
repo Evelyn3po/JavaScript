@@ -6,7 +6,8 @@ function FontSize(type){
     size=parseFloat(size);
     if(type=='aumenta'){
       elemento.style.FontSize=(size+5)+"px";
-    }else{
+    }
+    else{
       elemento.style.fontSize=(size-5)+"px";
     }
   })
